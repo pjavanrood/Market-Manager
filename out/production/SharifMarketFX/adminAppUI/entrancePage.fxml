@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminAppUI.EntrancePage">
+   <top>
+      <BorderPane prefHeight="80.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="Sharif Makret Admin Panel" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.6690647482014389" endY="1.0" startX="0.28776978417266186">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7697368264198303" green="0.3094983696937561" blue="0.09621710330247879" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.05975877121090889" green="0.4322551190853119" blue="0.7171052694320679" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <center>
+      <ImageView fitHeight="149.0" fitWidth="200.0" onMouseClicked="#adminEnterClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Assets/Admin.png" />
+         </image>
+      </ImageView>
+   </center>
+   <bottom>
+      <Region prefHeight="92.0" prefWidth="617.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

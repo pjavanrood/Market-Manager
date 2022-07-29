@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="costumerAppUI.BuyWindow">
+   <top>
+      <BorderPane prefHeight="67.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label prefHeight="29.0" prefWidth="197.0" text="Enter Desired Quantity:" BorderPane.alignment="CENTER">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.3597122302158273">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8799999952316284" green="0.37557142972946167" blue="0.2199999988079071" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007532956685499058">
+                           <color>
+                              <Color red="0.8799999952316284" green="0.37557142972946167" blue="0.2199999988079071" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.10252192616462708" green="0.2763066589832306" blue="0.6513158082962036" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <center>
+      <TextField fx:id="textField" prefHeight="312.0" prefWidth="223.0" promptText="Quantity" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Region prefHeight="13.0" prefWidth="60.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Region prefHeight="2.0" prefWidth="60.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <Button mnemonicParsing="false" onAction="#buyButtonClicked" text="Buy" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminAppUI.OrdersTables">
+    <top>
+        <BorderPane prefHeight="63.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+            <center>
+                <Label text="Orders List" BorderPane.alignment="CENTER">
+                    <textFill>
+                        <LinearGradient endX="0.8273381294964028" endY="1.0" startX="0.29256594724220625">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.8355262875556946" green="0.31332236528396606" blue="0.1392543911933899" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.07995248585939407" green="0.4016660451889038" blue="0.8223684430122375" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                    <font>
+                        <Font size="25.0" />
+                    </font></Label>
+            </center>
+            <left>
+                <ImageView fitHeight="59.0" fitWidth="45.0" onMouseClicked="#returnButtonClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                    <image>
+                        <Image url="@../Assets/return.png" />
+                    </image>
+                </ImageView>
+            </left>
+            <right>
+                <Region prefHeight="63.0" prefWidth="45.0" BorderPane.alignment="CENTER" />
+            </right>
+        </BorderPane>
+    </top>
+    <center>
+        <TableView fx:id="ordersTable" prefHeight="649.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="120.0" text="iD" />
+                <TableColumn fx:id="costumerIdColumn" prefWidth="120.0" text="Costumer iD" />
+                <TableColumn fx:id="goodIdColumn" prefWidth="120.0" text="Ordered Good iD" />
+                <TableColumn fx:id="volColumn" prefWidth="120.0" text="Quantity" />
+                <TableColumn fx:id="priceColumn" prefWidth="120.0" text="Total Price" />
+                <TableColumn fx:id="dateTimeColumn" prefWidth="240.0" text="Date &amp; Time" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

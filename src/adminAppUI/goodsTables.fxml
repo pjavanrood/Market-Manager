@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminAppUI.GoodsTables">
+   <top>
+      <BorderPane prefHeight="63.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="Goods List" BorderPane.alignment="CENTER">
+               <textFill>
+                  <LinearGradient endX="0.8273381294964028" endY="1.0" startX="0.29256594724220625">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8355262875556946" green="0.31332236528396606" blue="0.1392543911933899" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.07995248585939407" green="0.4016660451889038" blue="0.8223684430122375" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+         </center>
+         <left>
+            <ImageView fitHeight="59.0" fitWidth="45.0" onMouseClicked="#returnButtonClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../Assets/return.png" />
+               </image>
+            </ImageView>
+         </left>
+         <right>
+            <Region prefHeight="63.0" prefWidth="45.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </top>
+   <center>
+      <TableView fx:id="goodsTable" prefHeight="649.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="120.0" text="iD" />
+            <TableColumn fx:id="nameColumn" prefWidth="120.0" text="Name" />
+            <TableColumn fx:id="inventoryColumn" prefWidth="120.0" text="Inventory" />
+            <TableColumn fx:id="sellPriceColumn" prefWidth="120.0" text="Sell Price" />
+            <TableColumn fx:id="buyPriceColumn" prefWidth="120.0" text="Buy Price" />
+            <TableColumn fx:id="availabilityColumn" prefWidth="120.0" text="Availablity" />
+            <TableColumn fx:id="sellVolColumn" prefWidth="120.0" text="Selled Volume" />
+            <TableColumn fx:id="totalSellColumn" prefWidth="120.0" text="total Sell" />
+            <TableColumn fx:id="profitColumn" prefWidth="120.0" text="Profit" />
+         </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <HBox prefHeight="120.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="88.0" prefWidth="1066.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="300.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="412.0" minWidth="10.0" prefWidth="300.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="nameField" promptText="Good Name">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="buyPriceField" promptText="Buy Price" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="volField" promptText="Volume" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="sellPriceField" promptText="Sell Price" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="88.0" prefWidth="1028.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="56.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.0" minWidth="10.0" prefWidth="364.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane prefHeight="120.0" prefWidth="241.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <BorderPane prefHeight="60.0" prefWidth="180.0">
+                           <center>
+                              <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="26.0" prefWidth="60.0" text="Add" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="52.0" prefWidth="163.0" GridPane.rowIndex="1">
+                           <center>
+                              <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearButtonClicked" prefWidth="60.0" text="Clear" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </GridPane>
+                  <GridPane maxWidth="100.0" minWidth="100.0" prefHeight="120.0" prefWidth="233.0" GridPane.columnIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonClicked" text="Delete" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Line endX="-100.20710754394531" endY="-120.94351196289062" startX="-100.0" GridPane.columnIndex="1" />
+                  <GridPane GridPane.columnIndex="3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="143.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="221.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ChoiceBox fx:id="modeChoiceBox" prefHeight="26.0" prefWidth="140.0" />
+                        <ChoiceBox fx:id="availabilityChoiceBox" prefWidth="140.0" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </ChoiceBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
+
+
+

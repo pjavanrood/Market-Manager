@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminAppUI.AdminMenu">
+   <center>
+      <GridPane prefHeight="297.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane>
+               <center>
+                  <ImageView fitHeight="150.0" fitWidth="145.0" onMouseClicked="#productsButtonClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/Products.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="1">
+               <center>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#ordersButtonClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/OrderHistory.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <Label prefHeight="75.0" prefWidth="132.0" text="Admin Panel">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7985611510791367" endY="1.0" startX="0.460431654676259">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9407894611358643" green="0.47039473056793213" blue="0.15679824352264404" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.0868055522441864" green="0.2751736044883728" blue="0.625" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </center>
+         <left>
+            <ImageView fitHeight="61.0" fitWidth="60.0" onMouseClicked="#returnButtonClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../Assets/return.png" />
+               </image>
+            </ImageView>
+         </left>
+         <right>
+            <Region prefHeight="0.0" prefWidth="60.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </top>
+   <bottom>
+      <Region prefHeight="61.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

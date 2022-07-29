@@ -1,0 +1,12 @@
+{"id":3016191,"name":"ball","unit":"item","vol":245,"available":true,"buyPrice":59800,"sellPrice":80000,"totalBuyPrice":14950000,"totalSellPrice":400000,"sellVol":5,"profit":101000,"orderVol":4}
+{"id":3351579,"name":"soya milk","unit":"item","vol":0,"available":false,"buyPrice":4800,"sellPrice":7000,"totalBuyPrice":48000,"totalSellPrice":70000,"sellVol":10,"profit":22000,"orderVol":3}
+{"id":1049642493,"name":"ketchup sauce","unit":"item","vol":102,"available":true,"buyPrice":14000,"sellPrice":20000,"totalBuyPrice":2100000,"totalSellPrice":960000,"sellVol":48,"profit":288000,"orderVol":10}
+{"id":1843158550,"name":"soya oil","unit":"liter","vol":116,"available":true,"buyPrice":29000,"sellPrice":40000,"totalBuyPrice":3770000,"totalSellPrice":560000,"sellVol":14,"profit":154000,"orderVol":5}
+{"id":1536708662,"name":"google eye","unit":"unit","vol":100,"available":true,"buyPrice":10000,"sellPrice":12000,"totalBuyPrice":1000000,"totalSellPrice":0,"sellVol":0,"profit":0,"orderVol":0}
+{"id":1182263643,"name":"iphone","unit":"unit","vol":100,"available":true,"buyPrice":1300000,"sellPrice":2000000,"totalBuyPrice":130000000,"totalSellPrice":0,"sellVol":0,"profit":0,"orderVol":0}
+{"id":1832154462,"name":"leather belt","unit":"unit","vol":190,"available":true,"buyPrice":12000,"sellPrice":21000,"totalBuyPrice":2280000,"totalSellPrice":0,"sellVol":0,"profit":0,"orderVol":0}
+{"id":203416690,"name":"headphone","unit":"unit","vol":497,"available":true,"buyPrice":80000,"sellPrice":120000,"totalBuyPrice":40000000,"totalSellPrice":360000,"sellVol":3,"profit":120000,"orderVol":2}
+{"id":1655134578,"name":"diapers","unit":"unit","vol":100,"available":true,"buyPrice":78000,"sellPrice":120000,"totalBuyPrice":9000000,"totalSellPrice":0,"sellVol":0,"profit":0,"orderVol":0}
+{"id":1109985830,"name":"laptop","unit":"unit","vol":72,"available":true,"buyPrice":450000,"sellPrice":660000,"totalBuyPrice":29250000,"totalSellPrice":0,"sellVol":0,"profit":0,"orderVol":0}
+{"id":1527202142,"name":"dorna cake","unit":"unit","vol":3,"available":true,"buyPrice":5000,"sellPrice":8000,"totalBuyPrice":15000,"totalSellPrice":0,"sellVol":0,"profit":0,"orderVol":1}
+{"id":2084329091,"name":"iphone 13","unit":"unit","vol":100,"available":true,"buyPrice":1299,"sellPrice":1599,"totalBuyPrice":129900,"totalSellPrice":0,"sellVol":0,"profit":0,"orderVol":0}
